@@ -3,7 +3,7 @@ import './App.css';
 import Resource from './components/Resource'
 
 const resource = {
-      PosterName: 'Cliff',
+      posterName: 'Cliff',
       resourceAuthor: 'NetNinja',
       authorSkillLevel: 'Advanced',
       cohort: '0',
