@@ -1,9 +1,99 @@
-* {
-  margin: 0;
-  padding: 0;
+body {
+  background-color: #25274d;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .box {
-  border: 1px solid blue;
+  border: 1px solid #000;
   margin: 10px;
+  margin-bottom: 25px;
+  width: 80%;
+  border-radius: 20px;
+  max-width: 500px;
+  background-color: #464866;
+  text-align: center;
+}
+
+.box:hover {
+  border: 3px solid #2e9cca;
+}
+
+.resourceList {
+  margin: 0 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+button {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  color: white;
+  margin-bottom: 10px;
+  background-color: #25274d;
+  border: black;
+  cursor: pointer;
+  font-weight: bold;
+  opacity: 0;
+  position: relative;
+  animation-name: btn;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes btn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+button:hover {
+  border: 2px solid#2e9cca;
+}
+
+h1 {
+  padding-left: 8%;
+  font-family: "Liu Jian Mao Cao", cursive;
+  font-weight: bold;
+}
+
+h2 {
+  position: relative;
+  color: #29648a;
+  animation: heading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes heading {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.content {
+  position: relative;
+  animation-name: content;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes content {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
