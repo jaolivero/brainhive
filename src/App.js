@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Resource from "./components/Resource";
 import resources from "./mock/resources";
+import { Router } from "react-router";
 
 class App extends Component {
   renderPosts = () => {
